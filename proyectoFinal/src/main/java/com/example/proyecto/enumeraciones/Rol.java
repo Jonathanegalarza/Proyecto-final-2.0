@@ -7,7 +7,7 @@ package com.example.proyecto.enumeraciones;
 public enum Rol {
     ADMIN("Administrador"),
     PROVEEDOR("Proveedor"),
-    USUARIO("Residente");
+    CLIENTE("Residente");
 
     private final String descripcion;
 

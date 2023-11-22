@@ -6,12 +6,13 @@
 package com.example.proyecto.entidades;
 
 import javax.persistence.Basic;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import org.hibernate.annotations.GenericGenerator;
-
+@Entity
 public class Imagen {
      @Id
     @GeneratedValue(generator = "uuid")
