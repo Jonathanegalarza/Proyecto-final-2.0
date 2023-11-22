@@ -5,19 +5,18 @@
  */
 package com.example.proyecto.repositorio;
 
-
-import com.example.proyecto.entidades.Proveedor;
-
+import com.example.proyecto.entidades.Rubro;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import org.springframework.stereotype.Repository;
 
+/**
+ *
+ * @author aprig
+ */
 @Repository
-public interface ProveedorRepositorio extends JpaRepository<Proveedor, String>{
-    /*
-@Query("SELECT p FROM ProveedorServ p WHERE"
-            + " CONCAT(p.id,p.nombre,p.precio)"
-            + " LIKE %?1%")
-    public List<Proveedor> findAlllList(String palabraClave);
-*/
+public interface RubroRepositorio extends JpaRepository<Rubro, String>{
+
+    public void save(String descripcion, String nombreRubro);
+    
+  
 }

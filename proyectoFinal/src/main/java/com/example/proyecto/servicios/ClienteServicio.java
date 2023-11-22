@@ -3,7 +3,7 @@ package com.example.proyecto.servicios;
 
 import com.example.proyecto.entidades.Cliente;
 import com.example.proyecto.exception.MiException;
-import com.example.proyecto.repositorio.ClienteRepositorio;
+import com.example.proyecto.repositorios.ClienteRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

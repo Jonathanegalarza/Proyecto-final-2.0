@@ -1,5 +1,5 @@
 
-package com.example.proyecto.repositorio;
+package com.example.proyecto.repositorios;
 
 
 import com.example.proyecto.entidades.Cliente;

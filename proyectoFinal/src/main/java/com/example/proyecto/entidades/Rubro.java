@@ -17,8 +17,12 @@ public class Rubro {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String idRubro;
     private String descripcion;//Detalle de los trabajo
-    private String tipoRubro;
+    private String nombreRubro;
    // private TipoRubro tipoRubro;
+
+    public void setNombre(String nombreRubro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
