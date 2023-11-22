@@ -15,14 +15,15 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.PrimaryKeyJoinColumn;
 import lombok.Data;
+//ProyectoSubido
 @Data
 @Entity
+@PrimaryKeyJoinColumn(name = "persona_dni")
 public class Administrador extends Persona {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+ 
 
     // Otros campos y anotaciones
     @ManyToMany
@@ -40,29 +41,5 @@ public class Administrador extends Persona {
 
     // Getters y setters
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Set<Trabajo> getServicios() {
-        return servicios;
-    }
-
-    public void setServicios(Set<Trabajo> servicios) {
-        this.servicios = servicios;
-    }
-
-    public Set<Rol> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Rol> roles) {
-        this.roles = roles;
-    }
-    
     
 }

@@ -7,14 +7,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
 @Data
 @Entity
 public class Rubro {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idRubro;
+    @GeneratedValue(generator="uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    private String idRubro;
     private String descripcion;//Detalle de los trabajo
+    private String tipoRubro;
    // private TipoRubro tipoRubro;
     
     

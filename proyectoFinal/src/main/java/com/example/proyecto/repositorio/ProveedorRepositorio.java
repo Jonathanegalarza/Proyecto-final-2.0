@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProveedorRepositorio extends JpaRepository<Proveedor, Long>{
+public interface ProveedorRepositorio extends JpaRepository<Proveedor, String>{
     /*
 @Query("SELECT p FROM ProveedorServ p WHERE"
             + " CONCAT(p.id,p.nombre,p.precio)"
